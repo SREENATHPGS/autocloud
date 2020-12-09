@@ -1,0 +1,10 @@
+{
+    "mumbai" : {
+        "test": "i-abcdefghijklmnopq",
+        "jenkins": "i-abcdefghijklmnopq"
+    },
+    "oregon" : {
+        "wordpress" : "i-abcdefghijklmnopq",
+        "webscrapper" : "i-abcdefghijklmnopq"
+    }
+}
