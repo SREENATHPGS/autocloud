@@ -43,9 +43,9 @@
     
   ```
 
-# readme for this branch
+# Readme for this branch
 This branch contains code thata is demonstrated on my blog published on below links.
 1. https://sreenathgirikanyadas.medium.com/start-stop-reboot-ec2-instances-using-pyhton-boto3-10e994121d4e
 
-# main readme
+# Main readme
 This is a git repo of collection of scripts i will be writing related to cloud/networking/devops/system management. Future goal is to make it a full fledged application that can be used to create and manage cloud and cloud based applications.
