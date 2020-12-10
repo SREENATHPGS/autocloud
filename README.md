@@ -32,7 +32,7 @@
 # Usage
   ```
   
-  (pyenv) ubuntu@@dell-machine-001:~/projects/autocloud$ python change_instance_state.py --help
+  (pyenv) ubuntu@dell-machine-001:~/projects/autocloud$ python change_instance_state.py --help
   usage: change_instance_state.py [-h] [--REGION REGION] [--STATE STATE] [--NAME NAME]
   optional arguments:
     -h, --help       show this help message and exit
