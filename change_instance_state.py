@@ -4,6 +4,7 @@ from botocore.config import Config
 import logging as logger
 from utils import regionMap
 
+available_states = ["start","stop","reboot"]
 logger.basicConfig(level="INFO")
 regionInstanceMap = {
         "mumbai" : {
@@ -14,20 +15,20 @@ regionInstanceMap = {
 
 def switch_instance_state(state, instances):
     if state == "start":
-        ec2.start_instances(InstanceIds=instances)
+        #ec2.start_instances(InstanceIds=instances)
         logger.info ('started your instances: ' + str(instances))
     elif state == "stop":
-        ec2.stop_instances(InstanceIds=instances)
+        #ec2.stop_instances(InstanceIds=instances)
         logger.info ('stopped your instances: ' + str(instances))
     elif state == "reboot":
-        ec2.reboot_instance(InstanceIds=instances)
+        #ec2.reboot_instance(InstanceIds=instances)
         logger.info ('rebooting your instances: ' + str(instances))
     return 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--REGION', help = "Region where instance is deployed", default = "mumbai")
-    parser.add_argument('--STATE', help = "State to which the instance has to be switched, [start, stop]")
+    parser.add_argument('--STATE', help = "State to which the instance has to be switched, [start, stop, reboot]")
     parser.add_argument('--NAME', help = "Name given to the instance")
     args = parser.parse_args()
 
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     logger.info("Instance name given is, {}".format(instanceName))
     logger.info("Instance will be switched to, {}".format(state))
 
-    if not state in ["start", "stop"]:
+    if not state in available_states:
         logger.info("No a valid instance state, exitting...")
         sys.exit()
 
