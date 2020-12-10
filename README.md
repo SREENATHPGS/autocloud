@@ -44,7 +44,7 @@
   ```
 
 # Readme for this branch
-This branch contains code thata is demonstrated on my blog published on below links.
+This branch contains production version of the code snippet that is published on my blogs. Links are given below,
 1. https://sreenathgirikanyadas.medium.com/start-stop-reboot-ec2-instances-using-pyhton-boto3-10e994121d4e
 
 # Main readme
