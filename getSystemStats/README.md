@@ -1,3 +1,3 @@
-# autocloud
-
-This is a git repo of collection of scripts i will be writing related to cloud/networking/devops/system management. Future goal is to make it a full fledged application that can be used to create and manage cloud and cloud based applications.
+# Get System Stats
+This script collects CPU, RAM and Root Disk usage and writes to a csv file.
+The CSV file is automatically created if not exist.
