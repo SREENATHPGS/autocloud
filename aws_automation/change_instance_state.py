@@ -7,8 +7,8 @@ from utils import regionMap
 logger.basicConfig(level="INFO")
 regionInstanceMap = {
         "mumbai" : {
-            "test": "i-08ddded3a22801f3b",
-            "jenkins":"i-0976dc3fbb0826aa8"
+            "test": "i-xxxxxxxxxxxxxxxxxx",
+            "jenkins":"i-xxxxxxxxxxxxxxxx"
             }
         }
 
