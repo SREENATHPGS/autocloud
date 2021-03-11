@@ -17,12 +17,13 @@ sudo apt install jq
 wget https://github.com/jpmens/jo/releases/download/1.4/jo-1.4.tar.gz
 
 tar xvzf jo-1.4.tar.gz
-cd jo-1.3
+cd jo-1.4
 autoreconf -i
 ./configure
 make check
 sudo make install
 rm jo-1.4.tar.gz
+rm -r jo-1.4
 ```
 
 ## Installation.
