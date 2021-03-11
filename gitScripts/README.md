@@ -7,6 +7,10 @@ The purpose of this script is to clean and update a git repo on a single command
 ## Requirements
 This script relies on a python package called jq. Please refer this github page for installation details https://github.com/mwilliamson/jq.py.
 
+or do
+
+sudo apt install jq
+
 ## Installation.
 ### Just Copying.
 
@@ -14,7 +18,7 @@ Download and store this script on your home directory and add an entry to your `
 
 ```
 cd ~/
-wget https://github.com/SREENATHPGS/autocloud/blob/main/gitScripts/gitUpdate.sh
+wget https://raw.githubusercontent.com/SREENATHPGS/autocloud/main/gitScripts/gitUpdate.sh
 mv gitUpdate.sh .gitUpdate.sh
 ```
 #### Add an entry to .bashrc
