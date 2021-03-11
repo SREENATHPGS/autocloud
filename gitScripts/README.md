@@ -21,7 +21,8 @@ cd jo-1.3
 autoreconf -i
 ./configure
 make check
-make install
+sudo make install
+rm jo-1.4.tar.gz
 ```
 
 ## Installation.
