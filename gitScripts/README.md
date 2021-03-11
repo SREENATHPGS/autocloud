@@ -5,11 +5,24 @@ The purpose of this script is to clean and update a git repo on a single command
  LINUX - Tested on Linux (Ubuntu:16.04, Ubuntu:18.04)
 
 ## Requirements
-This script relies on a python package called jq. Please refer this github page for installation details https://github.com/mwilliamson/jq.py.
+This script relies on packages jo and jq. 
+Please refer this github page for installation details of jq - https://github.com/mwilliamson/jq.py.
+for jo - https://github.com/jpmens/jo
 
 or do
 
+```
 sudo apt install jq
+
+wget https://github.com/jpmens/jo/releases/download/1.4/jo-1.4.tar.gz
+
+tar xvzf jo-1.4.tar.gz
+cd jo-1.3
+autoreconf -i
+./configure
+make check
+make install
+```
 
 ## Installation.
 ### Just Copying.
