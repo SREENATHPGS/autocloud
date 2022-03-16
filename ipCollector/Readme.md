@@ -24,8 +24,10 @@ This README would normally document whatever steps are necessary to get your app
     4. `python app.py`
 
 * Deployment instructions - Will update installation on client side soon.
-    1. Run `crontab -e`
-    2. Add an entry `*/10 * * * * bash /home/dave_amd/update_ip.sh -i enxd8bbc14b0c13 -u 192.168.1.51:8000` to the end of the file. This entry will call the script every 5 minuted, so the IP will be updated to the server every 5 mins.
+    1. Run `ifconfig` and get your computer's interface name. Eg. wlo1, ensp1, etc...
+    2. Run `wget https://github.com/SREENATHPGS/autocloud/blob/main/ipCollector/update_ip.sh`
+    3. Run `crontab -e`
+    4. Add an entry `*/10 * * * * bash ~/update_ip.sh -i <interface_name> -u <server_url>` to the end of the file. This entry will call the script every 5 minuted, so the IP will be updated to the server every 5 mins.
 
 ### Who do I talk to? ###
 
