@@ -13,7 +13,8 @@ echo \
 sudo apt-get update
 sudo apt-get -yy install docker-ce docker-ce-cli containerd.io
 
-groupadd docker
-usermod -aG docker $USER
+##Run the below commands manually to user docker without sudo
+#groupadd docker
+#usermod -aG docker $USER
 
 echo "Docker Installation over. Run `docker run hello-world` to verify."
