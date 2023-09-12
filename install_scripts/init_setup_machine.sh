@@ -13,8 +13,13 @@ function install_git() {
   sudo apt install git -yy
 }
 
+function webserver() {
+  sudo apt install nginx -yy
+}
+
 function install_all() {
   basic_packages
   install_docker
   install_git
+  install_webserver
 }
