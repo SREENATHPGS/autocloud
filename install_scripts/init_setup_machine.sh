@@ -15,6 +15,7 @@ function install_git() {
 
 function webserver() {
   sudo apt install nginx -yy
+  sudo apt install certbot python3-certbot-nginx -yy
 }
 
 function install_all() {
