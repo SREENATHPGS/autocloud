@@ -9,8 +9,12 @@ function install_docker() {
   wget -O - https://raw.githubusercontent.com/SREENATHPGS/autocloud/main/install_scripts/install_docker.sh | bash
 }
 
+function install_git() {
+  sudo apt install git -yy
+}
 
 function install_all() {
   basic_packages
   install_docker
+  install_git
 }
